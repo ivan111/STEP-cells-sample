@@ -1,0 +1,1285 @@
+Tidying 'D:\git\STEP-cells-sample\003_pg_op2\code-table\code-table.html'
+R=1 C=1: Returning starttag node <table class="highlighttable highlight"> stream
+line 1 column 1 - Warning: missing <!DOCTYPE> declaration
+Entering ParseHTML...
+R=1 C=1: Returning lex-token node <table class="highlighttable highlight"> lexer
+Enter ParseHead...
+R=1 C=1: Returning lex-token node <table class="highlighttable highlight"> lexer
+Exit ParseHead 1...
+R=1 C=1: Returning lex-token node <table class="highlighttable highlight"> lexer
+line 1 column 1 - Warning: inserting implicit <body>
+Enter ParseBody...
+R=1 C=1: Returning lex-token node <table class="highlighttable highlight"> lexer
+R=2 C=3: Returning starttag node <tr> stream
+R=2 C=7: Returning starttag node <td class="linenos"> stream
+Entering ParseBlock 1...
+R=2 C=27: Returning text TextNode [1]1 stream
+R=2 C=28: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=2 C=33: Returning starttag node <td class="code"> stream
+Entering ParseBlock 1...
+R=2 C=50: Returning starttag node <pre> stream
+R=2 C=55: Returning starttag node <span class="k"> stream
+Entering ParseInline 1...
+R=2 C=71: Returning text TextNode [def]3 stream
+R=2 C=74: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=2 C=81: Returning text_node TextNode [ ]1 stream
+R=2 C=82: Returning starttag node <span class="nf"> stream
+Entering ParseInline 1...
+R=2 C=99: Returning text TextNode [parse...]16 stream
+R=2 C=115: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=2 C=122: Returning starttag node <span class="p"> stream
+Entering ParseInline 1...
+R=2 C=138: Returning text TextNode [():]3 stream
+R=2 C=141: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=2 C=148: Returning endtag node <pre> stream
+R=2 C=154: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=2 C=159: Returning endtag node <tr> stream
+R=3 C=3: Returning starttag node <tr> stream
+R=3 C=7: Returning starttag node <td class="linenos"> stream
+Entering ParseBlock 1...
+R=3 C=27: Returning text TextNode [2]1 stream
+R=3 C=28: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=3 C=33: Returning starttag node <td class="code"> stream
+Entering ParseBlock 1...
+R=3 C=50: Returning starttag node <pre> stream
+R=3 C=55: Returning text_node TextNode [    ]4 stream
+R=3 C=59: Returning starttag node <span class="n"> stream
+Entering ParseInline 1...
+R=3 C=75: Returning text TextNode [lhs]3 stream
+R=3 C=78: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=3 C=85: Returning text_node TextNode [ ]1 stream
+R=3 C=86: Returning starttag node <span class="o"> stream
+Entering ParseInline 1...
+R=3 C=102: Returning text TextNode [=]1 stream
+R=3 C=103: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=3 C=110: Returning text_node TextNode [ ]1 stream
+R=3 C=111: Returning starttag node <span class="n"> stream
+Entering ParseInline 1...
+R=3 C=127: Returning text TextNode [parse...]13 stream
+R=3 C=140: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=3 C=147: Returning starttag node <span class="p"> stream
+Entering ParseInline 1...
+R=3 C=163: Returning text TextNode [()]2 stream
+R=3 C=165: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=3 C=172: Returning endtag node <pre> stream
+R=3 C=178: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=3 C=183: Returning endtag node <tr> stream
+R=4 C=3: Returning starttag node <tr> stream
+R=4 C=7: Returning starttag node <td class="linenos"> stream
+Entering ParseBlock 1...
+R=4 C=27: Returning text TextNode [3]1 stream
+R=4 C=28: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=4 C=33: Returning starttag node <td class="code"> stream
+Entering ParseBlock 1...
+R=4 C=50: Returning starttag node <pre> stream
+R=4 C=55: Returning text_node TextNode [    ]4 stream
+R=4 C=59: Returning starttag node <span class="k"> stream
+Entering ParseInline 1...
+R=4 C=75: Returning text TextNode [retur.]6 stream
+R=4 C=81: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=4 C=88: Returning text_node TextNode [ ]1 stream
+R=4 C=89: Returning starttag node <span class="n"> stream
+Entering ParseInline 1...
+R=4 C=105: Returning text TextNode [parse...]13 stream
+R=4 C=118: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=4 C=125: Returning starttag node <span class="p"> stream
+Entering ParseInline 1...
+R=4 C=141: Returning text TextNode [(]1 stream
+R=4 C=142: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=4 C=149: Returning starttag node <span class="mi"> stream
+Entering ParseInline 1...
+R=4 C=166: Returning text TextNode [0]1 stream
+R=4 C=167: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=4 C=174: Returning starttag node <span class="p"> stream
+Entering ParseInline 1...
+R=4 C=190: Returning text TextNode [,]1 stream
+R=4 C=191: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=4 C=198: Returning text_node TextNode [ ]1 stream
+R=4 C=199: Returning starttag node <span class="n"> stream
+Entering ParseInline 1...
+R=4 C=215: Returning text TextNode [lhs]3 stream
+R=4 C=218: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=4 C=225: Returning starttag node <span class="p"> stream
+Entering ParseInline 1...
+R=4 C=241: Returning text TextNode [)]1 stream
+R=4 C=242: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=4 C=249: Returning endtag node <pre> stream
+R=4 C=255: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=4 C=260: Returning endtag node <tr> stream
+R=5 C=3: Returning starttag node <tr> stream
+R=5 C=7: Returning starttag node <td class="linenos"> stream
+Entering ParseBlock 1...
+R=5 C=27: Returning text TextNode [4]1 stream
+R=5 C=28: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=5 C=33: Returning starttag node <td class="code"> stream
+Entering ParseBlock 1...
+R=5 C=50: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=5 C=55: Returning endtag node <tr> stream
+R=6 C=3: Returning starttag node <tr> stream
+R=6 C=7: Returning starttag node <td class="linenos"> stream
+Entering ParseBlock 1...
+R=6 C=27: Returning text TextNode [5]1 stream
+R=6 C=28: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=6 C=33: Returning starttag node <td class="code"> stream
+Entering ParseBlock 1...
+R=6 C=50: Returning starttag node <pre> stream
+R=6 C=55: Returning starttag node <span class="k"> stream
+Entering ParseInline 1...
+R=6 C=71: Returning text TextNode [def]3 stream
+R=6 C=74: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=6 C=81: Returning text_node TextNode [ ]1 stream
+R=6 C=82: Returning starttag node <span class="nf"> stream
+Entering ParseInline 1...
+R=6 C=99: Returning text TextNode [parse...]13 stream
+R=6 C=112: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=6 C=119: Returning starttag node <span class="p"> stream
+Entering ParseInline 1...
+R=6 C=135: Returning text TextNode [(]1 stream
+R=6 C=136: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=6 C=143: Returning starttag node <span class="n"> stream
+Entering ParseInline 1...
+R=6 C=159: Returning text TextNode [expr_...]9 stream
+R=6 C=168: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=6 C=175: Returning starttag node <span class="p"> stream
+Entering ParseInline 1...
+R=6 C=191: Returning text TextNode [,]1 stream
+R=6 C=192: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=6 C=199: Returning text_node TextNode [ ]1 stream
+R=6 C=200: Returning starttag node <span class="n"> stream
+Entering ParseInline 1...
+R=6 C=216: Returning text TextNode [lhs]3 stream
+R=6 C=219: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=6 C=226: Returning starttag node <span class="p"> stream
+Entering ParseInline 1...
+R=6 C=242: Returning text TextNode [):]2 stream
+R=6 C=244: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=6 C=251: Returning endtag node <pre> stream
+R=6 C=257: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=6 C=262: Returning endtag node <tr> stream
+R=7 C=3: Returning starttag node <tr> stream
+R=7 C=7: Returning starttag node <td class="linenos"> stream
+Entering ParseBlock 1...
+R=7 C=27: Returning text TextNode [6]1 stream
+R=7 C=28: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=7 C=33: Returning starttag node <td class="code"> stream
+Entering ParseBlock 1...
+R=7 C=50: Returning starttag node <pre> stream
+R=7 C=55: Returning text_node TextNode [    ]4 stream
+R=7 C=59: Returning starttag node <span class="k"> stream
+Entering ParseInline 1...
+R=7 C=75: Returning text TextNode [while]5 stream
+R=7 C=80: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=7 C=87: Returning text_node TextNode [ ]1 stream
+R=7 C=88: Returning starttag node <span class="bp"> stream
+Entering ParseInline 1...
+R=7 C=105: Returning text TextNode [True]4 stream
+R=7 C=109: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=7 C=116: Returning starttag node <span class="p"> stream
+Entering ParseInline 1...
+R=7 C=132: Returning text TextNode [:]1 stream
+R=7 C=133: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=7 C=140: Returning endtag node <pre> stream
+R=7 C=146: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=7 C=151: Returning endtag node <tr> stream
+R=8 C=3: Returning starttag node <tr> stream
+R=8 C=7: Returning starttag node <td class="linenos"> stream
+Entering ParseBlock 1...
+R=8 C=27: Returning text TextNode [7]1 stream
+R=8 C=28: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=8 C=33: Returning starttag node <td class="code"> stream
+Entering ParseBlock 1...
+R=8 C=50: Returning starttag node <pre> stream
+R=8 C=55: Returning text_node TextNode [     ...]8 stream
+R=8 C=63: Returning starttag node <span class="n"> stream
+Entering ParseInline 1...
+R=8 C=79: Returning text TextNode [tok_p...]8 stream
+R=8 C=87: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=8 C=94: Returning text_node TextNode [ ]1 stream
+R=8 C=95: Returning starttag node <span class="o"> stream
+Entering ParseInline 1...
+R=8 C=111: Returning text TextNode [=]1 stream
+R=8 C=112: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=8 C=119: Returning text_node TextNode [ ]1 stream
+R=8 C=120: Returning starttag node <span class="n"> stream
+Entering ParseInline 1...
+R=8 C=136: Returning text TextNode [get_t...]18 stream
+R=8 C=154: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=8 C=161: Returning starttag node <span class="p"> stream
+Entering ParseInline 1...
+R=8 C=177: Returning text TextNode [()]2 stream
+R=8 C=179: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=8 C=186: Returning endtag node <pre> stream
+R=8 C=192: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=8 C=197: Returning endtag node <tr> stream
+R=9 C=3: Returning starttag node <tr> stream
+R=9 C=7: Returning starttag node <td class="linenos"> stream
+Entering ParseBlock 1...
+R=9 C=27: Returning text TextNode [8]1 stream
+R=9 C=28: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=9 C=33: Returning starttag node <td class="code"> stream
+Entering ParseBlock 1...
+R=9 C=50: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=9 C=55: Returning endtag node <tr> stream
+R=10 C=3: Returning starttag node <tr> stream
+R=10 C=7: Returning starttag node <td class="linenos"> stream
+Entering ParseBlock 1...
+R=10 C=27: Returning text TextNode [9]1 stream
+R=10 C=28: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=10 C=33: Returning starttag node <td class="code"> stream
+Entering ParseBlock 1...
+R=10 C=50: Returning starttag node <pre> stream
+R=10 C=55: Returning text_node TextNode [     ...]8 stream
+R=10 C=63: Returning starttag node <span class="k"> stream
+Entering ParseInline 1...
+R=10 C=79: Returning text TextNode [if]2 stream
+R=10 C=81: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=10 C=88: Returning text_node TextNode [ ]1 stream
+R=10 C=89: Returning starttag node <span class="n"> stream
+Entering ParseInline 1...
+R=10 C=105: Returning text TextNode [expr_...]9 stream
+R=10 C=114: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=10 C=121: Returning text_node TextNode [ ]1 stream
+R=10 C=122: Returning starttag node <span class="o"> stream
+Entering ParseInline 1...
+R=10 C=138: Returning text TextNode [>]1 stream
+R=10 C=142: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=10 C=149: Returning text_node TextNode [ ]1 stream
+R=10 C=150: Returning starttag node <span class="n"> stream
+Entering ParseInline 1...
+R=10 C=166: Returning text TextNode [tok_p...]8 stream
+R=10 C=174: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=10 C=181: Returning starttag node <span class="p"> stream
+Entering ParseInline 1...
+R=10 C=197: Returning text TextNode [:]1 stream
+R=10 C=198: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=10 C=205: Returning endtag node <pre> stream
+R=10 C=211: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=10 C=216: Returning endtag node <tr> stream
+R=11 C=3: Returning starttag node <tr> stream
+R=11 C=7: Returning starttag node <td class="linenos"> stream
+Entering ParseBlock 1...
+R=11 C=27: Returning text TextNode [10]2 stream
+R=11 C=29: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=11 C=34: Returning starttag node <td class="code"> stream
+Entering ParseBlock 1...
+R=11 C=51: Returning starttag node <pre> stream
+R=11 C=56: Returning text_node TextNode [     ...]12 stream
+R=11 C=68: Returning starttag node <span class="k"> stream
+Entering ParseInline 1...
+R=11 C=84: Returning text TextNode [retur.]6 stream
+R=11 C=90: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=11 C=97: Returning text_node TextNode [ ]1 stream
+R=11 C=98: Returning starttag node <span class="n"> stream
+Entering ParseInline 1...
+R=11 C=114: Returning text TextNode [lhs]3 stream
+R=11 C=117: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=11 C=124: Returning endtag node <pre> stream
+R=11 C=130: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=11 C=135: Returning endtag node <tr> stream
+R=12 C=3: Returning starttag node <tr> stream
+R=12 C=7: Returning starttag node <td class="linenos"> stream
+Entering ParseBlock 1...
+R=12 C=27: Returning text TextNode [11]2 stream
+R=12 C=29: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=12 C=34: Returning starttag node <td class="code"> stream
+Entering ParseBlock 1...
+R=12 C=51: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=12 C=56: Returning endtag node <tr> stream
+R=13 C=3: Returning starttag node <tr> stream
+R=13 C=7: Returning starttag node <td class="linenos"> stream
+Entering ParseBlock 1...
+R=13 C=27: Returning text TextNode [12]2 stream
+R=13 C=29: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=13 C=34: Returning starttag node <td class="code"> stream
+Entering ParseBlock 1...
+R=13 C=51: Returning starttag node <pre> stream
+R=13 C=56: Returning text_node TextNode [     ...]8 stream
+R=13 C=64: Returning starttag node <span class="n"> stream
+Entering ParseInline 1...
+R=13 C=80: Returning text TextNode [op2]3 stream
+R=13 C=83: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=13 C=90: Returning text_node TextNode [ ]1 stream
+R=13 C=91: Returning starttag node <span class="o"> stream
+Entering ParseInline 1...
+R=13 C=107: Returning text TextNode [=]1 stream
+R=13 C=108: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=13 C=115: Returning text_node TextNode [ ]1 stream
+R=13 C=116: Returning starttag node <span class="n"> stream
+Entering ParseInline 1...
+R=13 C=132: Returning text TextNode [cur_t..]7 stream
+R=13 C=139: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=13 C=146: Returning endtag node <pre> stream
+R=13 C=152: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=13 C=157: Returning endtag node <tr> stream
+R=14 C=3: Returning starttag node <tr> stream
+R=14 C=7: Returning starttag node <td class="linenos"> stream
+Entering ParseBlock 1...
+R=14 C=27: Returning text TextNode [13]2 stream
+R=14 C=29: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=14 C=34: Returning starttag node <td class="code"> stream
+Entering ParseBlock 1...
+R=14 C=51: Returning starttag node <pre> stream
+R=14 C=56: Returning text_node TextNode [     ...]8 stream
+R=14 C=64: Returning starttag node <span class="n"> stream
+Entering ParseInline 1...
+R=14 C=80: Returning text TextNode [get_n...]14 stream
+R=14 C=94: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=14 C=101: Returning starttag node <span class="p"> stream
+Entering ParseInline 1...
+R=14 C=117: Returning text TextNode [()]2 stream
+R=14 C=119: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=14 C=126: Returning endtag node <pre> stream
+R=14 C=132: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=14 C=137: Returning endtag node <tr> stream
+R=15 C=3: Returning starttag node <tr> stream
+R=15 C=7: Returning starttag node <td class="linenos"> stream
+Entering ParseBlock 1...
+R=15 C=27: Returning text TextNode [14]2 stream
+R=15 C=29: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=15 C=34: Returning starttag node <td class="code"> stream
+Entering ParseBlock 1...
+R=15 C=51: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=15 C=56: Returning endtag node <tr> stream
+R=16 C=3: Returning starttag node <tr> stream
+R=16 C=7: Returning starttag node <td class="linenos"> stream
+Entering ParseBlock 1...
+R=16 C=27: Returning text TextNode [15]2 stream
+R=16 C=29: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=16 C=34: Returning starttag node <td class="code"> stream
+Entering ParseBlock 1...
+R=16 C=51: Returning starttag node <pre> stream
+R=16 C=56: Returning text_node TextNode [     ...]8 stream
+R=16 C=64: Returning starttag node <span class="n"> stream
+Entering ParseInline 1...
+R=16 C=80: Returning text TextNode [rhs]3 stream
+R=16 C=83: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=16 C=90: Returning text_node TextNode [ ]1 stream
+R=16 C=91: Returning starttag node <span class="o"> stream
+Entering ParseInline 1...
+R=16 C=107: Returning text TextNode [=]1 stream
+R=16 C=108: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=16 C=115: Returning text_node TextNode [ ]1 stream
+R=16 C=116: Returning starttag node <span class="n"> stream
+Entering ParseInline 1...
+R=16 C=132: Returning text TextNode [parse...]13 stream
+R=16 C=145: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=16 C=152: Returning starttag node <span class="p"> stream
+Entering ParseInline 1...
+R=16 C=168: Returning text TextNode [()]2 stream
+R=16 C=170: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=16 C=177: Returning endtag node <pre> stream
+R=16 C=183: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=16 C=188: Returning endtag node <tr> stream
+R=17 C=3: Returning starttag node <tr> stream
+R=17 C=7: Returning starttag node <td class="linenos"> stream
+Entering ParseBlock 1...
+R=17 C=27: Returning text TextNode [16]2 stream
+R=17 C=29: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=17 C=34: Returning starttag node <td class="code"> stream
+Entering ParseBlock 1...
+R=17 C=51: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=17 C=56: Returning endtag node <tr> stream
+R=18 C=3: Returning starttag node <tr> stream
+R=18 C=7: Returning starttag node <td class="linenos"> stream
+Entering ParseBlock 1...
+R=18 C=27: Returning text TextNode [17]2 stream
+R=18 C=29: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=18 C=34: Returning starttag node <td class="code"> stream
+Entering ParseBlock 1...
+R=18 C=51: Returning starttag node <pre> stream
+R=18 C=56: Returning text_node TextNode [     ...]8 stream
+R=18 C=64: Returning starttag node <span class="n"> stream
+Entering ParseInline 1...
+R=18 C=80: Returning text TextNode [next_...]9 stream
+R=18 C=89: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=18 C=96: Returning text_node TextNode [ ]1 stream
+R=18 C=97: Returning starttag node <span class="o"> stream
+Entering ParseInline 1...
+R=18 C=113: Returning text TextNode [=]1 stream
+R=18 C=114: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=18 C=121: Returning text_node TextNode [ ]1 stream
+R=18 C=122: Returning starttag node <span class="n"> stream
+Entering ParseInline 1...
+R=18 C=138: Returning text TextNode [get_t...]18 stream
+R=18 C=156: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=18 C=163: Returning starttag node <span class="p"> stream
+Entering ParseInline 1...
+R=18 C=179: Returning text TextNode [()]2 stream
+R=18 C=181: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=18 C=188: Returning endtag node <pre> stream
+R=18 C=194: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=18 C=199: Returning endtag node <tr> stream
+R=19 C=3: Returning starttag node <tr> stream
+R=19 C=7: Returning starttag node <td class="linenos"> stream
+Entering ParseBlock 1...
+R=19 C=27: Returning text TextNode [18]2 stream
+R=19 C=29: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=19 C=34: Returning starttag node <td class="code"> stream
+Entering ParseBlock 1...
+R=19 C=51: Returning starttag node <pre> stream
+R=19 C=56: Returning text_node TextNode [     ...]8 stream
+R=19 C=64: Returning starttag node <span class="k"> stream
+Entering ParseInline 1...
+R=19 C=80: Returning text TextNode [if]2 stream
+R=19 C=82: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=19 C=89: Returning text_node TextNode [ ]1 stream
+R=19 C=90: Returning starttag node <span class="n"> stream
+Entering ParseInline 1...
+R=19 C=106: Returning text TextNode [tok_p...]8 stream
+R=19 C=114: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=19 C=121: Returning text_node TextNode [ ]1 stream
+R=19 C=122: Returning starttag node <span class="o"> stream
+Entering ParseInline 1...
+R=19 C=138: Returning text TextNode [<]1 stream
+R=19 C=142: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=19 C=149: Returning text_node TextNode [ ]1 stream
+R=19 C=150: Returning starttag node <span class="n"> stream
+Entering ParseInline 1...
+R=19 C=166: Returning text TextNode [next_...]9 stream
+R=19 C=175: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=19 C=182: Returning starttag node <span class="p"> stream
+Entering ParseInline 1...
+R=19 C=198: Returning text TextNode [:]1 stream
+R=19 C=199: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=19 C=206: Returning endtag node <pre> stream
+R=19 C=212: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=19 C=217: Returning endtag node <tr> stream
+R=20 C=3: Returning starttag node <tr> stream
+R=20 C=7: Returning starttag node <td class="linenos"> stream
+Entering ParseBlock 1...
+R=20 C=27: Returning text TextNode [19]2 stream
+R=20 C=29: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=20 C=34: Returning starttag node <td class="code"> stream
+Entering ParseBlock 1...
+R=20 C=51: Returning starttag node <pre> stream
+R=20 C=56: Returning text_node TextNode [     ...]12 stream
+R=20 C=68: Returning starttag node <span class="n"> stream
+Entering ParseInline 1...
+R=20 C=84: Returning text TextNode [rhs]3 stream
+R=20 C=87: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=20 C=94: Returning text_node TextNode [ ]1 stream
+R=20 C=95: Returning starttag node <span class="o"> stream
+Entering ParseInline 1...
+R=20 C=111: Returning text TextNode [=]1 stream
+R=20 C=112: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=20 C=119: Returning text_node TextNode [ ]1 stream
+R=20 C=120: Returning starttag node <span class="n"> stream
+Entering ParseInline 1...
+R=20 C=136: Returning text TextNode [parse...]13 stream
+R=20 C=149: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=20 C=156: Returning starttag node <span class="p"> stream
+Entering ParseInline 1...
+R=20 C=172: Returning text TextNode [(]1 stream
+R=20 C=173: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=20 C=180: Returning starttag node <span class="n"> stream
+Entering ParseInline 1...
+R=20 C=196: Returning text TextNode [tok_p...]8 stream
+R=20 C=204: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=20 C=211: Returning text_node TextNode [ ]1 stream
+R=20 C=212: Returning starttag node <span class="o"> stream
+Entering ParseInline 1...
+R=20 C=228: Returning text TextNode [+]1 stream
+R=20 C=229: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=20 C=236: Returning text_node TextNode [ ]1 stream
+R=20 C=237: Returning starttag node <span class="mi"> stream
+Entering ParseInline 1...
+R=20 C=254: Returning text TextNode [1]1 stream
+R=20 C=255: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=20 C=262: Returning starttag node <span class="p"> stream
+Entering ParseInline 1...
+R=20 C=278: Returning text TextNode [,]1 stream
+R=20 C=279: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=20 C=286: Returning text_node TextNode [ ]1 stream
+R=20 C=287: Returning starttag node <span class="n"> stream
+Entering ParseInline 1...
+R=20 C=303: Returning text TextNode [rhs]3 stream
+R=20 C=306: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=20 C=313: Returning starttag node <span class="p"> stream
+Entering ParseInline 1...
+R=20 C=329: Returning text TextNode [)]1 stream
+R=20 C=330: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=20 C=337: Returning endtag node <pre> stream
+R=20 C=343: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=20 C=348: Returning endtag node <tr> stream
+R=21 C=3: Returning starttag node <tr> stream
+R=21 C=7: Returning starttag node <td class="linenos"> stream
+Entering ParseBlock 1...
+R=21 C=27: Returning text TextNode [20]2 stream
+R=21 C=29: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=21 C=34: Returning starttag node <td class="code"> stream
+Entering ParseBlock 1...
+R=21 C=51: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=21 C=56: Returning endtag node <tr> stream
+R=22 C=3: Returning starttag node <tr> stream
+R=22 C=7: Returning starttag node <td class="linenos"> stream
+Entering ParseBlock 1...
+R=22 C=27: Returning text TextNode [21]2 stream
+R=22 C=29: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=22 C=34: Returning starttag node <td class="code"> stream
+Entering ParseBlock 1...
+R=22 C=51: Returning starttag node <pre> stream
+R=22 C=56: Returning text_node TextNode [     ...]8 stream
+R=22 C=64: Returning starttag node <span class="n"> stream
+Entering ParseInline 1...
+R=22 C=80: Returning text TextNode [lhs]3 stream
+R=22 C=83: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=22 C=90: Returning text_node TextNode [ ]1 stream
+R=22 C=91: Returning starttag node <span class="o"> stream
+Entering ParseInline 1...
+R=22 C=107: Returning text TextNode [=]1 stream
+R=22 C=108: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=22 C=115: Returning text_node TextNode [ ]1 stream
+R=22 C=116: Returning starttag node <span class="n"> stream
+Entering ParseInline 1...
+R=22 C=132: Returning text TextNode [creat...]12 stream
+R=22 C=144: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=22 C=151: Returning starttag node <span class="p"> stream
+Entering ParseInline 1...
+R=22 C=167: Returning text TextNode [(]1 stream
+R=22 C=168: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=22 C=175: Returning starttag node <span class="n"> stream
+Entering ParseInline 1...
+R=22 C=191: Returning text TextNode [op2]3 stream
+R=22 C=194: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=22 C=201: Returning starttag node <span class="p"> stream
+Entering ParseInline 1...
+R=22 C=217: Returning text TextNode [,]1 stream
+R=22 C=218: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=22 C=225: Returning text_node TextNode [ ]1 stream
+R=22 C=226: Returning starttag node <span class="n"> stream
+Entering ParseInline 1...
+R=22 C=242: Returning text TextNode [lhs]3 stream
+R=22 C=245: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=22 C=252: Returning starttag node <span class="p"> stream
+Entering ParseInline 1...
+R=22 C=268: Returning text TextNode [,]1 stream
+R=22 C=269: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=22 C=276: Returning text_node TextNode [ ]1 stream
+R=22 C=277: Returning starttag node <span class="n"> stream
+Entering ParseInline 1...
+R=22 C=293: Returning text TextNode [rhs]3 stream
+R=22 C=296: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=22 C=303: Returning starttag node <span class="p"> stream
+Entering ParseInline 1...
+R=22 C=319: Returning text TextNode [)]1 stream
+R=22 C=320: Returning endtag node <span> stream
+Exit ParseInline 2 0...
+R=22 C=327: Returning endtag node <pre> stream
+R=22 C=333: Returning endtag node <td> stream
+Exit ParseBlock 2 0...
+R=22 C=338: Returning endtag node <tr> stream
+R=23 C=1: Returning endtag node <table> stream
+Returning NULL...
+Exit ParseBody 1...
+Exit ParseHTML 2...
+line 1 column 1 - Warning: inserting missing 'title' element
+All nodes BEFORE clean and repair
+Root  
+ StartTag html implicit 
+  StartTag head implicit 
+   StartTag title implicit 
+  StartTag body implicit 
+   StartTag table   class="highlighttable highlight"
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+      StartTag pre  
+       StartTag span   class="k"
+        Text  
+       Text  
+       StartTag span   class="nf"
+        Text  
+       StartTag span   class="p"
+        Text  
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+      StartTag pre  
+       Text  
+       StartTag span   class="n"
+        Text  
+       Text  
+       StartTag span   class="o"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+       StartTag span   class="p"
+        Text  
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+      StartTag pre  
+       Text  
+       StartTag span   class="k"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+       StartTag span   class="p"
+        Text  
+       StartTag span   class="mi"
+        Text  
+       StartTag span   class="p"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+       StartTag span   class="p"
+        Text  
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+      StartTag pre  
+       StartTag span   class="k"
+        Text  
+       Text  
+       StartTag span   class="nf"
+        Text  
+       StartTag span   class="p"
+        Text  
+       StartTag span   class="n"
+        Text  
+       StartTag span   class="p"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+       StartTag span   class="p"
+        Text  
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+      StartTag pre  
+       Text  
+       StartTag span   class="k"
+        Text  
+       Text  
+       StartTag span   class="bp"
+        Text  
+       StartTag span   class="p"
+        Text  
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+      StartTag pre  
+       Text  
+       StartTag span   class="n"
+        Text  
+       Text  
+       StartTag span   class="o"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+       StartTag span   class="p"
+        Text  
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+      StartTag pre  
+       Text  
+       StartTag span   class="k"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+       Text  
+       StartTag span   class="o"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+       StartTag span   class="p"
+        Text  
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+      StartTag pre  
+       Text  
+       StartTag span   class="k"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+      StartTag pre  
+       Text  
+       StartTag span   class="n"
+        Text  
+       Text  
+       StartTag span   class="o"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+      StartTag pre  
+       Text  
+       StartTag span   class="n"
+        Text  
+       StartTag span   class="p"
+        Text  
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+      StartTag pre  
+       Text  
+       StartTag span   class="n"
+        Text  
+       Text  
+       StartTag span   class="o"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+       StartTag span   class="p"
+        Text  
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+      StartTag pre  
+       Text  
+       StartTag span   class="n"
+        Text  
+       Text  
+       StartTag span   class="o"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+       StartTag span   class="p"
+        Text  
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+      StartTag pre  
+       Text  
+       StartTag span   class="k"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+       Text  
+       StartTag span   class="o"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+       StartTag span   class="p"
+        Text  
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+      StartTag pre  
+       Text  
+       StartTag span   class="n"
+        Text  
+       Text  
+       StartTag span   class="o"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+       StartTag span   class="p"
+        Text  
+       StartTag span   class="n"
+        Text  
+       Text  
+       StartTag span   class="o"
+        Text  
+       Text  
+       StartTag span   class="mi"
+        Text  
+       StartTag span   class="p"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+       StartTag span   class="p"
+        Text  
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+      StartTag pre  
+       Text  
+       StartTag span   class="n"
+        Text  
+       Text  
+       StartTag span   class="o"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+       StartTag span   class="p"
+        Text  
+       StartTag span   class="n"
+        Text  
+       StartTag span   class="p"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+       StartTag span   class="p"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+       StartTag span   class="p"
+        Text  
+All nodes AFTER clean and repair
+Root  
+ DocType   PUBLIC
+ StartTag html implicit 
+  StartTag head implicit 
+   StartTag meta implicit  name="generator" content="HTML Tidy for HTML5 for Windows version 4.9.23"
+   StartTag title implicit 
+  StartTag body implicit 
+   StartTag table   class="highlighttable highlight"
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+      StartTag pre  
+       StartTag span   class="k"
+        Text  
+       Text  
+       StartTag span   class="nf"
+        Text  
+       StartTag span   class="p"
+        Text  
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+      StartTag pre  
+       Text  
+       StartTag span   class="n"
+        Text  
+       Text  
+       StartTag span   class="o"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+       StartTag span   class="p"
+        Text  
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+      StartTag pre  
+       Text  
+       StartTag span   class="k"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+       StartTag span   class="p"
+        Text  
+       StartTag span   class="mi"
+        Text  
+       StartTag span   class="p"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+       StartTag span   class="p"
+        Text  
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+      StartTag pre  
+       StartTag span   class="k"
+        Text  
+       Text  
+       StartTag span   class="nf"
+        Text  
+       StartTag span   class="p"
+        Text  
+       StartTag span   class="n"
+        Text  
+       StartTag span   class="p"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+       StartTag span   class="p"
+        Text  
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+      StartTag pre  
+       Text  
+       StartTag span   class="k"
+        Text  
+       Text  
+       StartTag span   class="bp"
+        Text  
+       StartTag span   class="p"
+        Text  
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+      StartTag pre  
+       Text  
+       StartTag span   class="n"
+        Text  
+       Text  
+       StartTag span   class="o"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+       StartTag span   class="p"
+        Text  
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+      StartTag pre  
+       Text  
+       StartTag span   class="k"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+       Text  
+       StartTag span   class="o"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+       StartTag span   class="p"
+        Text  
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+      StartTag pre  
+       Text  
+       StartTag span   class="k"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+      StartTag pre  
+       Text  
+       StartTag span   class="n"
+        Text  
+       Text  
+       StartTag span   class="o"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+      StartTag pre  
+       Text  
+       StartTag span   class="n"
+        Text  
+       StartTag span   class="p"
+        Text  
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+      StartTag pre  
+       Text  
+       StartTag span   class="n"
+        Text  
+       Text  
+       StartTag span   class="o"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+       StartTag span   class="p"
+        Text  
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+      StartTag pre  
+       Text  
+       StartTag span   class="n"
+        Text  
+       Text  
+       StartTag span   class="o"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+       StartTag span   class="p"
+        Text  
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+      StartTag pre  
+       Text  
+       StartTag span   class="k"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+       Text  
+       StartTag span   class="o"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+       StartTag span   class="p"
+        Text  
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+      StartTag pre  
+       Text  
+       StartTag span   class="n"
+        Text  
+       Text  
+       StartTag span   class="o"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+       StartTag span   class="p"
+        Text  
+       StartTag span   class="n"
+        Text  
+       Text  
+       StartTag span   class="o"
+        Text  
+       Text  
+       StartTag span   class="mi"
+        Text  
+       StartTag span   class="p"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+       StartTag span   class="p"
+        Text  
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+    StartTag tr  
+     StartTag td   class="linenos"
+      Text  
+     StartTag td   class="code"
+      StartTag pre  
+       Text  
+       StartTag span   class="n"
+        Text  
+       Text  
+       StartTag span   class="o"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+       StartTag span   class="p"
+        Text  
+       StartTag span   class="n"
+        Text  
+       StartTag span   class="p"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+       StartTag span   class="p"
+        Text  
+       Text  
+       StartTag span   class="n"
+        Text  
+       StartTag span   class="p"
+        Text  
+Info: Document content looks like HTML5

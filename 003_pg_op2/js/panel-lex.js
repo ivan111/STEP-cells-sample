@@ -1,0 +1,106 @@
+(function() {
+    "use strict";
+
+    sc.panels.Lex = Lex;
+
+
+    function Lex(stepCells, conf) {
+        createLexPanel(this, stepCells, conf);
+    }
+
+
+    function createLexPanel(thisObj, stepCells, conf) {
+        var panel = conf.container;
+        helpers.addClass(panel, "sc-lex-panel");
+
+        panel.innerHTML = "ソースコード：<input class='sc-lex-src' type='text' value='a + b + (c + d) * e * f + g' style='width: 16em;' />" +
+            "<input class='sc-lex-button' type='button' value='字句解析' /><div class='sc-lex-message'></div>";
+
+        var lexSrc = panel.getElementsByClassName("sc-lex-src")[0];
+        var msg = panel.getElementsByClassName("sc-lex-message")[0];
+
+        thisObj.lexButton = panel.getElementsByClassName("sc-lex-button")[0];
+        thisObj.lexButton.onclick = function () {
+            try {
+                var tokens = lex(lexSrc.value);
+            } catch (e) {
+                tokens = [{ nodeChar: "$", className: "node-type-none", toString: tokenToString }];
+                msg.innerHTML = e;
+            }
+
+            stepCells.js.tokens = tokens;
+            stepCells.reset();
+
+            stepCells.panels.lexTable.deleteAll();
+            stepCells.panels.lexTable.insertRow(tokens);
+        };
+    }
+
+
+    var RE_SPACE = /^([ \t]+)/;
+    var RE_NUM = /^(\d+)/;
+    var RE_ID = /^([a-zA-Z_]\w*)/;
+    var RE_CHAR = /^([\+\-\*\/\(\)^])/;
+
+    function lex(src) {
+        var i = 0;
+        var tokens = [];
+
+        for (;;) {
+            if (i >= src.length) {
+                tokens.push({ nodeChar: "$", className: "node-type-none", toString: tokenToString });
+                break;
+            }
+
+            var s = src.substr(i);
+            var m = RE_SPACE.exec(s);
+
+            if (m) {
+                i += m[1].length;
+                s = src.substr(i);
+            }
+
+            m = RE_CHAR.exec(s);
+
+            if (m) {
+                var no = "none";
+
+                if (m[1] === "+" || m[1] === "-") {
+                    no = 2;
+                } else if (m[1] === "*" || m[1] === "/") {
+                    no = 3;
+                }
+
+                tokens.push({ nodeChar: m[1], className: "node-type-" + no, toString: tokenToString });
+                i += m[1].length;
+                continue;
+            }
+
+            m = RE_ID.exec(s);
+
+            if (m) {
+                tokens.push({ nodeChar: "V", className: "node-type-4", nodeText: m[1], toString: tokenToString });
+                i += m[1].length;
+                continue;
+            }
+
+            m = RE_NUM.exec(s);
+
+            if (m) {
+                var num = parseInt(m[1]);
+                tokens.push({ nodeChar: "n", className: "node-type-5", nodeText: "" + num, num: num, toString: tokenToString });
+                i += m[1].length;
+                continue;
+            }
+
+            throw ["(pos ", i + 1, ") unknown token: " + s[0]].join("");
+        }
+
+        return tokens;
+    }
+
+
+    function tokenToString() {
+        return this.nodeChar;
+    }
+})();

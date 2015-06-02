@@ -1,0 +1,76 @@
+.left-panel {
+    width: 550px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.right-panel {
+    width: 410px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.exr-panel {
+    margin: 1em auto 1em;
+}
+
+
+.exr-panel input[type=button] {
+    margin-right: 1em;
+    padding: 4px;
+}
+
+
+textarea.exr-console {
+    color: #FFF;
+    background-color: #333;
+}
+
+
+.err-message {
+    color: #F00;
+}
+
+
+.panel {
+    margin: 1em auto;
+}
+
+
+td.active {
+    background-color: #ABBFFE;
+}
+
+
+td.compare1 {
+    background-color: #BFFEAB;
+}
+
+
+td.compare2 {
+    background-color: #FEABBF;
+}
+
+
+#compare-table td {
+    text-align: center;
+}
+
+
+/* ---------------------------------------------------------------------------
+ tree
+ --------------------------------------------------------------------------- */
+
+.node.ast-number circle {
+  fill: #cfc;
+}
+
+.node.ast-op2 circle {
+  fill: #fcc;
+}
+
+.node.ast-ns circle {
+  fill: #ccf;
+}

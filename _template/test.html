@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>STEP細胞 Test</title>
+
+<link rel="stylesheet" href="../../www/css/main.css">
+<link rel="stylesheet" href="../../www/css/panel.css">
+<link rel="stylesheet" href="../../www/css/highlight.css">
+
+{% for js_file in js_files -%}
+<script src="{{ js_file }}"></script>
+{% endfor %}
+{% for js_file in settings.js_files -%}
+<script src="{{ js_file }}"></script>
+{% endfor %}
+
+<script type="text/javascript">
+window.onload = function () {
+  {{ settings.name }}.init();
+  {{ settings.name }}.compile();
+};
+</script>
+</head>
+<body>
+
+<div class="site">
+
+  <header>
+    <h1 class="title">STEP細胞 Test</h1>
+  </header>
+
+
+  <section>
+    <h2>やせうま</h2>
+
+    <textarea id="src" name="src" rows="20" cols="80" style="width: 100%;">{{ src }}</textarea>
+
+    <p><input type="button" value="Compile" onclick="{{ settings.name }}.compile();" /></p>
+
+    <p id="message" style="color: #F00;"></p>
+  </section>
+
+
+  <section>
+    <h2>STEP細胞</h2>
+
+    {% if settings.panels.buttons.use -%}
+    <div id="buttonsContainer"></div>
+    {%- endif %}
+
+    {{ code_table }}
+
+    {% if settings.panels.varsTable.use -%}
+    <div id="varsTableContainer"></div>
+    {%- endif %}
+    {% if settings.panels.console.use -%}
+    <div id="consoleContainer"></div>
+    {%- endif %}
+    {% if settings.panels.tree.use -%}
+    <div id="treeContainer"></div>
+    {%- endif %}
+    {% if settings.panels.callTree.use -%}
+    <div id="callTreeContainer"></div>
+    {%- endif %}
+    {%- for panel in settings.panels -%}
+      {% if settings.panels[panel].isCustom -%}
+      <div id="{{ settings.panels[panel].containerId }}"></div>
+      {%- endif %}
+    {%- endfor %}
+  </section>
+
+
+  <section>
+    <h2>Debugger</h2>
+
+    <div id="buttonsContainer2"></div>
+
+    {% if settings.panels.asmTable.use -%}
+    <div id="asmTableContainer"></div>
+    {%- endif %}
+  </section>
+
+
+  <section>
+    <h2>STEP細胞バイナリ</h2>
+
+    <textarea id="dest" name="dest" rows="6" cols="80" style="width: 100%;"></textarea>
+  </section>
+
+</div>
+
+</body>
+</html>

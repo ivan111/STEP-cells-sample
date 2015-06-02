@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>演算子順位構文解析</title>
+
+<link rel="stylesheet" href="../../www/css/main.css">
+<link rel="stylesheet" href="../../STEP-cells/css/panel.css">
+<link rel="stylesheet" href="../../www/css/highlight.css">
+<link rel="stylesheet" href="css/opp.css">
+
+<script src="../../vtree2/js/d3.js"></script>
+<script src="../../STEP-cells/js/step-cells.min.js"></script>
+<script src="js/panel-lex.js"></script>
+<script src="js/opp.js"></script>
+
+
+<script type="text/javascript">
+window.onload = function () {
+  opp.init();
+};
+</script>
+</head>
+<body>
+
+<div class="site">
+
+  <header>
+    <a href="/">HOME</a> &gt;
+    <h1 class="title">演算子順位構文解析</h1>
+  </header>
+
+  <section>
+    <h2>特徴</h2>
+
+    <ul>
+      <li>演算子の優先順位を利用した解析方法</li>
+      <li>人手による実装は楽であるが、言語クラス（表現できるもの）は狭い</li>
+      <li>優先順位の表現には、順位行列や順位関数（以下で用いている）がある</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>STEP実行はあります！</h2>
+
+
+    <div class="left-panel">
+      <div id="message"></div>
+
+      <div id="lexContainer" class="panel"></div>
+
+      <div class="panel">
+        <p class="caption">字句解析の結果</p>
+        <table id="lex-result" class="sc-table"></table>
+      </div>
+
+      <div class="panel">
+        <p class="caption">スタック</p>
+        <table id="stack" class="sc-table"></table>
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <div class="panel">
+        <p><span class="caption">文法</span><br/>
+        E := E+E | E-E | E*E | E/E | E^E | (E) | num</p>
+      </div>
+
+
+      <div class="panel">
+        <p class="caption">順位関数</p>
+        <table id="prec" class="sc-table precedence-function">
+          <tr><th></th><th>+</th><th>-</th><th>*</th><th>/</th><th>^</th><th>(</th><th>)</th><th>n</th><th>$</th></tr>
+          <tr><th>f</th><td>2</td><td>2</td><td>4</td><td>4</td><td>5</td><td>0</td><td>11</td><td>11</td><td>0</td></tr>
+          <tr><th>g</th><td>1</td><td>1</td><td>3</td><td>3</td><td>6</td><td>10</td><td>0</td><td>10</td><td>0</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div id="buttonsContainer"></div>
+
+    <div class="left-panel">
+      <table id="codeTable" class="highlighttable highlight">
+        <tr><td class="linenos">1</td><td class="code"><pre><span class="n">b</span> <span class="o">=</span> input.shift()</pre></td></tr>
+        <tr><td class="linenos">2</td><td class="code"><pre><span class="k">while</span> <span class="bp">True</span><span class="p">:</span></pre></td></tr>
+        <tr><td class="linenos">3</td><td class="code"><pre>    <span class="n">a</span> <span class="o">=</span> <span class="n">stack</span>で一番トップに近い終端記号</pre></td></tr>
+        <tr><td class="linenos">4</td><td class="code"></td></tr>
+        <tr><td class="linenos">5</td><td class="code"><pre>    <span class="k">if</span> <span class="n">a</span> <span class="o">==</span> '$' <span class="ow">and</span> <span class="n">b</span> <span class="o">==</span> '$'<span class="p">:</span></pre></td></tr>
+        <tr><td class="linenos">6</td><td class="code"><pre>        <span class="k">break</span>  <span class="c"># 受理</span></pre></td></tr>
+        <tr><td class="linenos">7</td><td class="code"><pre>    <span class="k">elif</span> <span class="n">f</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="n">g</span><span class="p">(</span><span class="n">b</span><span class="p">):</span></pre></td></tr>
+        <tr><td class="linenos">8</td><td class="code"><pre>        <span class="n">stack</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">b</span><span class="p">)</span></pre></td></tr>
+        <tr><td class="linenos">9</td><td class="code"><pre>        <span class="n">b</span> <span class="o">=</span> input.shift()</pre></td></tr>
+        <tr><td class="linenos">10</td><td class="code"><pre>    <span class="k">else</span><span class="p">:</span></pre></td></tr>
+        <tr><td class="linenos">11</td><td class="code"><pre>        <span class="k">for</span> <span class="n">b1, b2</span> <span class="ow">in</span> <span class="n">stack</span>の右側から順に２つの終端記号を取得<span class="p">:</span></pre></td></tr>
+        <tr><td class="linenos">12</td><td class="code"><pre>            <span class="k">if</span> <span class="n">f</span><span class="p">(</span><span class="n">b1</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">g</span><span class="p">(</span><span class="n">b2</span><span class="p">):</span></pre></td></tr>
+        <tr><td class="linenos">13</td><td class="code"><pre>                <span class="k">break</span></pre></td></tr>
+        <tr><td class="linenos">14</td><td class="code"><pre>        </pre></td></tr>
+        <tr><td class="linenos">15</td><td class="code"><pre>        <span class="n">handle</span> <span class="o">=</span> <span class="n">stack</span>の<span class="n">b1</span>の１つ上からトップまで</pre></td></tr>
+        <tr><td class="linenos">16</td><td class="code"><pre>        <span class="n">nonterminal</span> <span class="o">=</span> <span class="n">handle</span>にマッチする生成規則を探す</pre></td></tr>
+        <tr><td class="linenos">17</td><td class="code"><pre>        <span class="k">if</span> <span class="n">nonterminal</span><span class="p">:</span></pre></td></tr>
+        <tr><td class="linenos">18</td><td class="code"><pre>            <span class="n">stack</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">nonterminal</span><span class="p">)</span></pre></td></tr>
+        <tr><td class="linenos">19</td><td class="code"><pre>        <span class="k">else</span><span class="p">:</span></pre></td></tr>
+        <tr><td class="linenos">20</td><td class="code"><pre>            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s">&#39;ERROR&#39;</span><span class="p">)</span></pre></td></tr>
+      </table>
+    </div>
+
+    <div class="right-panel">
+      <div id="treeContainer"></div>
+    </div>
+  </section>
+
+
+  <section>
+    <h2>参考</h2>
+
+    <p>佐々 政孝『プログラミング言語処理系』(1989)</p>
+  </section>
+
+  <footer>
+    <div class="contact">
+      <p><a href="/pm/postmail.html">メッセージを送る</a>　作成日:2015-05-03</p>
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>

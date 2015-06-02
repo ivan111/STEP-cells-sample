@@ -1,0 +1,47 @@
+{
+    "name": "sample",
+
+    "panels": {
+        "buttons": {
+            "use": true,
+            "name": "Buttons",
+            "varName": "buttons",
+            "conf": "{ container: buttonsContainer, showRunButton: true }"
+        },
+
+        "varsTable": {
+            "use": true,
+            "name": "VarsTable",
+            "varName": "varsTable",
+            "conf": "{ container: varsTableContainer, minNumRows: 6 }"
+        },
+
+        "console": {
+            "use": true,
+            "name": "Console",
+            "varName": "console",
+            "conf": "{ container: consoleContainer }"
+        },
+
+        "asmTable": {
+            "use": true,
+            "name": "AsmTable",
+            "varName": "asmTable",
+            "conf": "{ container: asmTableContainer, html: html }"
+        },
+
+        "tree": {
+            "use": true,
+            "name": "Tree",
+            "varName": "tree",
+            "conf": "{ container: treeContainer, width: 960, height: 300 }"
+        },
+
+        "callTree": {
+            "use": true,
+            "name": "CallTree",
+            "varName": "callTree",
+            "conf": "{ container: callTreeContainer, width: 960, height: 300 }"
+        }
+    }
+}

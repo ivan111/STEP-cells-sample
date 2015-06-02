@@ -1,0 +1,23 @@
+<table class="highlighttable highlight">
+  <tr><td class="linenos">1</td><td class="code"><pre><span class="k">def</span> <span class="nf">parse_expression</span><span class="p">():</span></pre></td></tr>
+  <tr><td class="linenos">2</td><td class="code"><pre>    <span class="n">lhs</span> <span class="o">=</span> <span class="n">parse_primary</span><span class="p">()</span></pre></td></tr>
+  <tr><td class="linenos">3</td><td class="code"><pre>    <span class="k">return</span> <span class="n">parse_op2_rhs</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">lhs</span><span class="p">)</span></pre></td></tr>
+  <tr><td class="linenos">4</td><td class="code"></td></tr>
+  <tr><td class="linenos">5</td><td class="code"><pre><span class="k">def</span> <span class="nf">parse_op2_rhs</span><span class="p">(</span><span class="n">expr_prec</span><span class="p">,</span> <span class="n">lhs</span><span class="p">):</span></pre></td></tr>
+  <tr><td class="linenos">6</td><td class="code"><pre>    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span></pre></td></tr>
+  <tr><td class="linenos">7</td><td class="code"><pre>        <span class="n">tok_prec</span> <span class="o">=</span> <span class="n">get_tok_Precedence</span><span class="p">()</span></pre></td></tr>
+  <tr><td class="linenos">8</td><td class="code"></td></tr>
+  <tr><td class="linenos">9</td><td class="code"><pre>        <span class="k">if</span> <span class="n">expr_prec</span> <span class="o">&gt;</span> <span class="n">tok_prec</span><span class="p">:</span></pre></td></tr>
+  <tr><td class="linenos">10</td><td class="code"><pre>            <span class="k">return</span> <span class="n">lhs</span></pre></td></tr>
+  <tr><td class="linenos">11</td><td class="code"></td></tr>
+  <tr><td class="linenos">12</td><td class="code"><pre>        <span class="n">op2</span> <span class="o">=</span> <span class="n">cur_tok</span></pre></td></tr>
+  <tr><td class="linenos">13</td><td class="code"><pre>        <span class="n">get_next_token</span><span class="p">()</span></pre></td></tr>
+  <tr><td class="linenos">14</td><td class="code"></td></tr>
+  <tr><td class="linenos">15</td><td class="code"><pre>        <span class="n">rhs</span> <span class="o">=</span> <span class="n">parse_primary</span><span class="p">()</span></pre></td></tr>
+  <tr><td class="linenos">16</td><td class="code"></td></tr>
+  <tr><td class="linenos">17</td><td class="code"><pre>        <span class="n">next_prec</span> <span class="o">=</span> <span class="n">get_tok_precedence</span><span class="p">()</span></pre></td></tr>
+  <tr><td class="linenos">18</td><td class="code"><pre>        <span class="k">if</span> <span class="n">tok_prec</span> <span class="o">&lt;</span> <span class="n">next_prec</span><span class="p">:</span></pre></td></tr>
+  <tr><td class="linenos">19</td><td class="code"><pre>            <span class="n">rhs</span> <span class="o">=</span> <span class="n">parse_op2_rhs</span><span class="p">(</span><span class="n">tok_prec</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">rhs</span><span class="p">)</span></pre></td></tr>
+  <tr><td class="linenos">20</td><td class="code"></td></tr>
+  <tr><td class="linenos">21</td><td class="code"><pre>        <span class="n">lhs</span> <span class="o">=</span> <span class="n">createOp2AST</span><span class="p">(</span><span class="n">op2</span><span class="p">,</span> <span class="n">lhs</span><span class="p">,</span> <span class="n">rhs</span><span class="p">)</span></pre></td></tr>
+</table>

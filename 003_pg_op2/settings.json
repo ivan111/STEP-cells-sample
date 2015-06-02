@@ -1,0 +1,65 @@
+{
+    "name": "op2",
+
+    "js_files": ["js/panel-lex.js", "js/parser.js"],
+
+    "panels": {
+        "lex": {
+            "use": true,
+            "isCustom": true,
+            "containerId": "lexContainer",
+            "name": "Lex",
+            "varName": "lex",
+            "conf": "{ container: lexContainer }"
+        },
+
+        "lexTable": {
+            "use": true,
+            "name": "Table",
+            "varName": "lexTable",
+            "conf": "{ table: lexTable }"
+        },
+
+        "buttons": {
+            "use": true,
+            "name": "Buttons",
+            "varName": "buttons",
+            "conf": "{ container: buttonsContainer, showRunButton: true }"
+        },
+
+        "varsTable": {
+            "use": true,
+            "name": "VarsTable",
+            "varName": "varsTable",
+            "conf": "{ container: varsTableContainer, minNumRows: 6 }"
+        },
+
+        "console": {
+            "use": false,
+            "name": "Console",
+            "varName": "console",
+            "conf": "{ container: consoleContainer }"
+        },
+
+        "asmTable": {
+            "use": true,
+            "name": "AsmTable",
+            "varName": "asmTable",
+            "conf": "{ container: asmTableContainer, html: html }"
+        },
+
+        "tree": {
+            "use": true,
+            "name": "Tree",
+            "varName": "tree",
+            "conf": "{ container: treeContainer, width: 960, height: 300 }"
+        },
+
+        "callTree": {
+            "use": false,
+            "name": "CallTree",
+            "varName": "callTree",
+            "conf": "{ container: callTreeContainer, width: 960, height: 300 }"
+        }
+    }
+}

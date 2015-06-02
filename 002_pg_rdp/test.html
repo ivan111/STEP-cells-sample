@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>STEP細胞 Test</title>
+
+<link rel="stylesheet" href="../../www/css/main.css">
+<link rel="stylesheet" href="../../www/css/panel.css">
+<link rel="stylesheet" href="../../www/css/highlight.css">
+
+<script src="../../vtree2/js/d3.js"></script>
+<script src="../../vtree2/js/vtree.js"></script>
+<script src="../../yaseuma/js/helpers.js"></script>
+<script src="../../yaseuma/js/lex.js"></script>
+<script src="../../yaseuma/js/ast.js"></script>
+<script src="../../yaseuma/js/exec.js"></script>
+<script src="../../yaseuma/js/generate.js"></script>
+<script src="../../yaseuma/js/parser/parser.js"></script>
+<script src="../../yaseuma/js/parser/parser.statement.js"></script>
+<script src="../../yaseuma/js/parser/parser.expression.js"></script>
+<script src="../../yaseuma/js/parser/parser.primary.js"></script>
+<script src="../../yaseuma/js/code-environment.js"></script>
+<script src="../../yaseuma/js/assembler.js"></script>
+<script src="../../STEP-cells/js/step-cells.js"></script>
+<script src="../../STEP-cells/js/step-cells.exec.js"></script>
+<script src="../../STEP-cells/js/vars.js"></script>
+<script src="../../STEP-cells/js/panel-buttons.js"></script>
+<script src="../../STEP-cells/js/panel-vars.js"></script>
+<script src="../../STEP-cells/js/panel-console.js"></script>
+<script src="../../STEP-cells/js/panel-code.js"></script>
+<script src="../../STEP-cells/js/panel-asm.js"></script>
+<script src="../../STEP-cells/js/panel-tree.js"></script>
+<script src="../../STEP-cells/js/panel-call-tree.js"></script>
+<script src="../../STEP-cells/js/panel-table.js"></script>
+<script src="js/test.js"></script>
+
+<script src="js/panel-lex.js"></script>
+
+
+<script type="text/javascript">
+window.onload = function () {
+  rdp.init();
+  rdp.compile();
+};
+</script>
+</head>
+<body>
+
+<div class="site">
+
+  <header>
+    <h1 class="title">STEP細胞 Test</h1>
+  </header>
+
+
+  <section>
+    <h2>やせうま</h2>
+
+    <textarea id="src" name="src" rows="20" cols="80" style="width: 100%;">E()
+if token.nodeChar != '$':
+    pause()
+
+def E():
+    num = T()
+    while token.nodeChar == '+' or token.nodeChar == '-':
+        node(); op = token.nodeChar; getToken()
+        right = T(); num = calc(op, num, right)
+
+def T():
+    num = F()
+    while token.nodeChar == '*' or token.nodeChar == '/':
+        node(); op = token.nodeChar; getToken()
+        right = F(); num = calc(op, num, right)
+
+def F():
+    if token.nodeChar == '(':
+        node(); getToken()
+        num = E()
+        if token.nodeChar != ')':
+            pause()
+        node(); getToken(); return num
+    elif token.nodeChar == 'n':
+        node(); num = token.num; getToken(); return num
+    else:
+        pause()
+</textarea>
+
+    <p><input type="button" value="Compile" onclick="rdp.compile();" /></p>
+
+    <p id="message" style="color: #F00;"></p>
+  </section>
+
+
+  <section>
+    <h2>STEP細胞</h2>
+
+    <div id="buttonsContainer"></div>
+
+    <table class="highlighttable highlight">
+  <tr><td class="linenos">1</td><td class="code"><pre><span class="n">E</span><span class="p">()</span></pre></td></tr>
+  <tr><td class="linenos">2</td><td class="code"><pre><span class="k">if</span> <span class="n">token</span> <span class="o">!=</span> <span class="s">&#39;$&#39;</span><span class="p">:</span></pre></td></tr>
+  <tr><td class="linenos">3</td><td class="code"><pre>    <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s">&#39;ERROR&#39;</span><span class="p">)</span></pre></td></tr>
+  <tr><td class="linenos">4</td><td class="code"></td></tr>
+  <tr><td class="linenos">5</td><td class="code"><pre><span class="k">def</span> <span class="nf">E</span><span class="p">():</span></pre></td></tr>
+  <tr><td class="linenos">6</td><td class="code"><pre>    <span class="n">T</span><span class="p">()</span></pre></td></tr>
+  <tr><td class="linenos">7</td><td class="code"><pre>    <span class="k">while</span> <span class="n">token</span> <span class="ow">in</span> <span class="p">[</span><span class="s">&#39;+&#39;</span><span class="p">,</span> <span class="s">&#39;-&#39;</span><span class="p">]:</span></pre></td></tr>
+  <tr><td class="linenos">8</td><td class="code"><pre>        <span class="n">getToken</span><span class="p">()</span></pre></td></tr>
+  <tr><td class="linenos">9</td><td class="code"><pre>        <span class="n">T</span><span class="p">()</span></pre></td></tr>
+  <tr><td class="linenos">10</td><td class="code"></td></tr>
+  <tr><td class="linenos">11</td><td class="code"><pre><span class="k">def</span> <span class="nf">T</span><span class="p">():</span></pre></td></tr>
+  <tr><td class="linenos">12</td><td class="code"><pre>    <span class="n">F</span><span class="p">()</span></pre></td></tr>
+  <tr><td class="linenos">13</td><td class="code"><pre>    <span class="k">while</span> <span class="n">token</span> <span class="ow">in</span> <span class="p">[</span><span class="s">&#39;*&#39;</span><span class="p">,</span> <span class="s">&#39;/&#39;</span><span class="p">]:</span></pre></td></tr>
+  <tr><td class="linenos">14</td><td class="code"><pre>        <span class="n">getToken</span><span class="p">()</span></pre></td></tr>
+  <tr><td class="linenos">15</td><td class="code"><pre>        <span class="n">F</span><span class="p">()</span></pre></td></tr>
+  <tr><td class="linenos">16</td><td class="code"></td></tr>
+  <tr><td class="linenos">17</td><td class="code"><pre><span class="k">def</span> <span class="nf">F</span><span class="p">():</span></pre></td></tr>
+  <tr><td class="linenos">18</td><td class="code"><pre>    <span class="k">if</span> <span class="n">token</span> <span class="o">==</span> <span class="s">&#39;(&#39;</span><span class="p">:</span></pre></td></tr>
+  <tr><td class="linenos">19</td><td class="code"><pre>        <span class="n">getToken</span><span class="p">()</span></pre></td></tr>
+  <tr><td class="linenos">20</td><td class="code"><pre>        <span class="n">E</span><span class="p">()</span></pre></td></tr>
+  <tr><td class="linenos">21</td><td class="code"><pre>        <span class="k">if</span> <span class="n">token</span> <span class="o">!=</span> <span class="s">&#39;)&#39;</span><span class="p">:</span></pre></td></tr>
+  <tr><td class="linenos">22</td><td class="code"><pre>            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s">&#39;ERROR&#39;</span><span class="p">)</span></pre></td></tr>
+  <tr><td class="linenos">23</td><td class="code"><pre>        <span class="n">getToken</span><span class="p">()</span></pre></td></tr>
+  <tr><td class="linenos">24</td><td class="code"><pre>    <span class="k">elif</span> <span class="n">token</span> <span class="o">==</span> <span class="s">&#39;n&#39;</span><span class="p">:</span></pre></td></tr>
+  <tr><td class="linenos">25</td><td class="code"><pre>        <span class="n">getToken</span><span class="p">()</span></pre></td></tr>
+  <tr><td class="linenos">26</td><td class="code"><pre>    <span class="k">else</span><span class="p">:</span></pre></td></tr>
+  <tr><td class="linenos">27</td><td class="code"><pre>        <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s">&#39;ERROR&#39;</span><span class="p">)</span></pre></td></tr>
+</table>
+
+    <div id="varsTableContainer"></div>
+    
+    
+    <div id="callTreeContainer"></div><div id="lexContainer"></div>
+  </section>
+
+
+  <section>
+    <h2>Debugger</h2>
+
+    <div id="buttonsContainer2"></div>
+
+    <div id="asmTableContainer"></div>
+  </section>
+
+
+  <section>
+    <h2>STEP細胞バイナリ</h2>
+
+    <textarea id="dest" name="dest" rows="6" cols="80" style="width: 100%;"></textarea>
+  </section>
+
+</div>
+
+</body>
+</html>

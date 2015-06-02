@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>STEP細胞 Test</title>
+
+<link rel="stylesheet" href="../../www/css/main.css">
+<link rel="stylesheet" href="../../www/css/panel.css">
+<link rel="stylesheet" href="../../www/css/highlight.css">
+
+<script src="../../vtree2/js/d3.js"></script>
+<script src="../../vtree2/js/vtree.js"></script>
+<script src="../../yaseuma/js/helpers.js"></script>
+<script src="../../yaseuma/js/lex.js"></script>
+<script src="../../yaseuma/js/ast.js"></script>
+<script src="../../yaseuma/js/exec.js"></script>
+<script src="../../yaseuma/js/generate.js"></script>
+<script src="../../yaseuma/js/parser/parser.js"></script>
+<script src="../../yaseuma/js/parser/parser.statement.js"></script>
+<script src="../../yaseuma/js/parser/parser.expression.js"></script>
+<script src="../../yaseuma/js/parser/parser.primary.js"></script>
+<script src="../../yaseuma/js/code-environment.js"></script>
+<script src="../../yaseuma/js/assembler.js"></script>
+<script src="../../STEP-cells/js/step-cells.js"></script>
+<script src="../../STEP-cells/js/step-cells.exec.js"></script>
+<script src="../../STEP-cells/js/vars.js"></script>
+<script src="../../STEP-cells/js/panel-buttons.js"></script>
+<script src="../../STEP-cells/js/panel-vars.js"></script>
+<script src="../../STEP-cells/js/panel-console.js"></script>
+<script src="../../STEP-cells/js/panel-code.js"></script>
+<script src="../../STEP-cells/js/panel-asm.js"></script>
+<script src="../../STEP-cells/js/panel-tree.js"></script>
+<script src="../../STEP-cells/js/panel-call-tree.js"></script>
+<script src="../../STEP-cells/js/panel-table.js"></script>
+<script src="js/test.js"></script>
+
+
+
+<script type="text/javascript">
+window.onload = function () {
+  sample.init();
+  sample.compile();
+};
+</script>
+</head>
+<body>
+
+<div class="site">
+
+  <header>
+    <h1 class="title">STEP細胞 Test</h1>
+  </header>
+
+
+  <section>
+    <h2>やせうま</h2>
+
+    <textarea id="src" name="src" rows="20" cols="80" style="width: 100%;">def f(n):
+    if n == 0:
+        return 1
+    else:
+        return n * f(n - 1)
+
+print(f(5))
+</textarea>
+
+    <p><input type="button" value="Compile" onclick="sample.compile();" /></p>
+
+    <p id="message" style="color: #F00;"></p>
+  </section>
+
+
+  <section>
+    <h2>STEP細胞</h2>
+
+    <div id="buttonsContainer"></div>
+
+    <table class="highlighttable highlight">
+  <tr><td class="linenos">1</td><td class="code"><pre><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">n</span><span class="p">):</span></pre></td></tr>
+  <tr><td class="linenos">2</td><td class="code"><pre>    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span></pre></td></tr>
+  <tr><td class="linenos">3</td><td class="code"><pre>        <span class="k">return</span> <span class="mi">1</span></pre></td></tr>
+  <tr><td class="linenos">4</td><td class="code"><pre>    <span class="k">else</span><span class="p">:</span></pre></td></tr>
+  <tr><td class="linenos">5</td><td class="code"><pre>        <span class="k">return</span> <span class="n">n</span> <span class="o">*</span> <span class="n">f</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span></pre></td></tr>
+  <tr><td class="linenos">6</td><td class="code"></td></tr>
+  <tr><td class="linenos">7</td><td class="code"><pre><span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span></pre></td></tr>
+</table>
+
+    <div id="varsTableContainer"></div>
+    <div id="consoleContainer"></div>
+    <div id="treeContainer"></div>
+    <div id="callTreeContainer"></div>
+  </section>
+
+
+  <section>
+    <h2>Debugger</h2>
+
+    <div id="buttonsContainer2"></div>
+
+    <div id="asmTableContainer"></div>
+  </section>
+
+
+  <section>
+    <h2>STEP細胞バイナリ</h2>
+
+    <textarea id="dest" name="dest" rows="6" cols="80" style="width: 100%;"></textarea>
+  </section>
+
+</div>
+
+</body>
+</html>
